@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus primeiro Site</title>
+    <style> 
+      body {
+          text-align: center;
+
+      }
+     
+
+    </style>
+
+</head>
+<body style="background-color:burlywood; font-family: 'Times New Roman', Times, serif;">
+    <h1 style="color: rgb(80, 80, 197) ;">Esboço de site com imagens dinamicas</h1>
+    <p ><strong>Tente abrir esse site em varios dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</strong></p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/fpequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/fmedia.png" type="image/png">
+       <img src="imagens/fgrande.png" alt="imagem flexivel">
+
+    </picture>
+    <h1 style="color: rgb(66, 66, 221) ;">Reproduzindo audio </h1>
+    <p><strong>Vamos aprender a reproduzier audios em HTML5</strong></p>
+    <audio preload="metadata" autoplay download >
+        <source src="media/TwilightTrain..mp3" type="audio/mpeg" >
+        <source src="media/TwilightTrain..ogg" type="audio/ogg">
+        <source src="media/TwilightTrain..wav" type="audio/wav">
+
+        <p>Infelizmente seu navegador não consegue reproduzir audio <a href="media/TwilightTrain.mp3">Clique aqui para baixar o arquivo mp3</a></p>
+
+
+    
+    </audio>
+    <audio src="media/TwilightTrain.mp3" controls autoplay></audio>
+
+    
+
+</body>
+</html>
